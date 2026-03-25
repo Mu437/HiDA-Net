@@ -1,0 +1,39 @@
+backbone: "ViT-L/14"          # CLIP backbone
+fbcnn_ckpt: '/path/to/fbcnn_color.pth'
+
+seed: 42
+epochs: 20
+
+batch_size:        8
+test_batch_size:    1
+
+learning_rate: 4.0e-4
+weight_decay: 0.05
+dropout: 0.1
+
+train_set:        genimage_train
+test_set: Hires_50K
+
+train_set_size:   50000
+test_set_size:    50000
+
+transformer_layers: 2
+transformer_heads:  2
+tile_layers:        1
+tile_heads:         2
+default_train_tiles: 16
+
+jpeg_augment: [60, 100]
+jpeg_p: 0.1
+
+blur_p: 0.1
+blur_augment: [0.1, 2.5]
+
+resize_augment: [0.25, 2]
+resize_p: 0.1
+
+replace_p: 0.1
+replace_ratio: [0.2, 0.98]
+replace_grid: 16
+
+num_workers: 8
