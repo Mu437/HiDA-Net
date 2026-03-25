@@ -31,4 +31,4 @@ torchrun --standalone --nproc-per-node=1 evaluate.py --config configs/test.yaml 
 ```
 ## HiRes-50K Dataset
 
-You can get this dataset from this [link]([https://github.com/jiaxi-jiang/FBCNN/releases/tag/v1.0](https://huggingface.co/datasets/Mu437/HiRes-50K)).
+You can get this dataset from this [link](https://huggingface.co/datasets/Mu437/HiRes-50K).
